@@ -1,9 +1,5 @@
-// get filter element
 const filterElement = document.querySelector("header input");
-// get cards elements
 const cardsElement = document.querySelectorAll(".cards li");
-
-// add input event for the filter element
 filterElement.addEventListener("input", filterCards)
 
 
@@ -18,7 +14,7 @@ function filterCards(){
                 card.style.display ="none"
            }
         } 
-          
+
     } else{            
         for(let card of cardsElement){
             card.style.display = "block"
